@@ -69,6 +69,9 @@ def main():
     if re.match("^[ATCGatcg]*$", dna_seq):
     # change it to upper case
         up_dna = dna_seq.upper()
+    else:
+    	print("** ERROR: This is not a DNA sequence")
+    	sys.exit()
 
     #print(up_dna)
     # call reverse function
